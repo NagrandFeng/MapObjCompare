@@ -87,7 +87,7 @@ public class MapCompareObject {
      */
     public static Map<String, List<Ball>> setBallFlag(Map<String, List<Ball>> ballMapRoom1, Map<String, List<Ball>> ballMapRoom2) {
 
-        // map中的数据转成String字符串存入SET,字符串组装格式为 topicName:channelName
+        // map中的数据转成String字符串存入SET,字符串组装格式为 box:ball
         Set<String> room1Balls = new HashSet<>();
         for (Map.Entry<String, List<Ball>> entry : ballMapRoom1.entrySet()) {
             String key = entry.getKey();
@@ -131,7 +131,7 @@ public class MapCompareObject {
                     ball.setBallFlag(0);
                     ballMapRoom2.get(boxName).add(ball);
                 } else {
-                    // 如果dmsChannelMap中不存在此topic,则重新创建好后添加入map里
+                    // 如果room2中不存在此盒子,则重新创建好后添加入map里
                     Ball ball=new Ball();
                     ball.setBallFlag(0);
                     ball.setBallName(ballName);
