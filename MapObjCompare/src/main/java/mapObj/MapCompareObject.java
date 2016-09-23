@@ -81,9 +81,9 @@ public class MapCompareObject {
     /**
      * 比较两个Map中的数据差异性
      *
-     * @param ballMapRoom1    来自nsqd的Map数据,格式为key[topicName]-value[channelName]
-     * @param ballMapRoom2 来自DB的map数据,格式为 key[topicName]-value[DmsChannel]
-     * @return 已经设置好标致的dmsChannelMap数据集合
+     * @param ballMapRoom1    room1
+     * @param ballMapRoom2    room2
+     * @return 已经设置好Ball标识的map数据集合
      */
     public static Map<String, List<Ball>> setBallFlag(Map<String, List<Ball>> ballMapRoom1, Map<String, List<Ball>> ballMapRoom2) {
 
