@@ -15,10 +15,20 @@
     
     c)房间1和房间2都有的
 
+##用到的方法
+两种方法都是先将
+Map型数据转换为集合元素为'boxName:ballName'字符串组成的Set集合
+
+不同区别在于
+setBallFlag方法：使用手动Set取差集的方法得到结果
+setBallFlagByGoogleSets方法：使用com.google.common.collect.Sets中的difference方法取得结果,这也是取差集的一种实现方法
+
+
 ##备注
 这是我在工作中遇到的一个问题，然后转换成这种抽象的，想找出一种方法来解决类似的问题
 
 在我的代码里，这里只是提供一种解决此问题的思路,欢迎大大们指点
+
 
 
 ##footer
