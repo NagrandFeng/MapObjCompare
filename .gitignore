@@ -41,3 +41,8 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+*.class
+MapObjCompare/mapObjCompare.iml
+MapObjCompare/.idea/workspace.xml
+MapObjCompare/.idea/.name
+*.xml
